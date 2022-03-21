@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../MAIN/style.css">
+    <title>E-Course|OOPS|tutorial</title>
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <button class="index" onclick="window.location.href = '../index.html'"><i class='bx bxs-smile'></i></button>
+            <span class="text">
+                KEC
+            </span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">
+                        <button class="oops" onclick="window.location.href = '../SUB/oops.html'">OOPS</button>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text"><button class="cn" onclick="window.location.href = '../index.html'">Next
+                            Generation Database</button></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text"><button class="cn" onclick="window.location.href = '../SUB/cn.html'">Computer
+                            Networks</button></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text"><button class="cn" onclick="window.location.href = '../SUB/ml.html'">Machine
+                            Learning</button></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text"><button class="cn"
+                            onclick="window.location.href = '../SUB/dbms.html'">DBMS</button></span>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="#" class="nav-link">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode"></label>
+            <!-- <a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a> -->
+            <!-- <a href="#" class="profile">
+				<img src="img/people.png">
+			</a> -->
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MAIN -->
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li><i class='bx bx-chevron-right'></i></li>
+                        <li>
+                            <a class="active" href="#">Tutorials</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <a href="#" class="btn-download">
+                    <a href="./upload.html"><span class="text1">Upload PDF</span></a>
+                </a> -->
+            </div>
+
+            <ul class="box-info">
+                <!-- <li>
+                    <i class='bx bxs-calendar-check'></i>
+                    <span class="text">
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="loki's resume">
+                            <h3>Syllabus</h3>
+                        </a>
+                        <p>NGDB Syllabus</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-calendar-check'></i>
+                    <span class="text">
+                        <a target="_self" href="Timetable.pdf" title="NGDBMS Time Table">
+                            <h3>Time Table</h3>
+                        </a>
+                        <a target="_self" href="Timetable.pdf" title="NGDBMS Time Table">
+                            <p>NGDB Periods</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-calendar-check'></i>
+                    <span class="text">
+                        <a target="_self" href="lesson plan.pdf" title="Lesson Plan">
+                            <h3>Lesson Plan</h3>
+                        </a>
+                        <a target="_self" href="lesson plan.pdf" title="Lesson Plan">
+                            <p>NGDB Lesson Plan</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="loki.pdf" title="loki's resume">
+                            <h3>Lecture Note</h3>
+                        </a>
+                        <p>NGDB Lecture Note</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="loki.pdf" title="loki's resume">
+                            <h3>Personal</h3>
+                        </a>
+                        <p>Personal Log Book</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="Test failure action.pdf" title="Test">
+                            <h3>Test</h3>
+                        </a>
+                        <a target="_self" href="Test failure action.pdf" title="Test">
+                            <p>Test Failure Action</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="course end survey.pdf" title="course survey">
+                            <h3>Course End Survey</h3>
+                        </a>
+                        <a target="_self" href="course end survey.pdf" title="course survey">
+                            <p>Things About The NGDB</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="loki.pdf" title="loki's resume">
+                            <h3>Attendance List</h3>
+                        </a>
+                        <p>Final Attendance List</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="Internal mark statement.pdf" title="internal mark">
+                            <h3>Internal Mark</h3>
+                        </a>
+                        <a target="_self" href="Internal mark statement.pdf" title="internal mark">
+                            <p>Internal Mark Statement</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="CCC.pdf" title="ccc">
+                            <h3>CCC</h3>
+                        </a>
+                        <a target="_self" href="CCC.pdf" title="ccc">
+                            <p>CCC Minutes</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="project.pdf" title="sap">
+                            <h3>SAP</h3>
+                        </a>
+                        <a target="_self" href="project.pdf" title="sap">
+                            <p>Activity Based Learning</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="loki.pdf" title="loki's resume">
+                            <h3>Slides</h3>
+                        </a>
+                        <p>Power Point Slides</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-calendar-check'></i>
+                    <span class="text">
+                        <a target="_self" href="cat.html" title="CAT">
+                            <h3>CAT</h3>
+                        </a>
+                        <p>NGDB CAT Test</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-calendar-check'></i>
+                    <span class="text">
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="Tutorials">
+                            <h3>Tutorials</h3>
+                        </a>
+                        <p>NGDB Tutorials</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-calendar-check'></i>
+                    <span class="text">
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="Assessments">
+                            <h3>Assessments</h3>
+                        </a>
+                        <p>NGDB Other Assessments</p>
+                    </span>
+                </li> -->
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <h3>Tutorial 1</h3>
+                        </a>
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <p>OOPS Tutorial 1</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <h3>Tutorial 2</h3>
+                        </a>
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <p>OOPS Tutorial 2</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <h3>Tutorial 3</h3>
+                        </a>
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <p>OOPS Tutorial 3</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <h3>Tutorial 4</h3>
+                        </a>
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <p>OOPS Tutorial 4</p>
+                        </a>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-group'></i>
+                    <span class="text">
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <h3>Tutorial 5</h3>
+                        </a>
+                        <a target="_self" href="ngdbms_syllabus.pdf" title="tutorials">
+                            <p>OOPS Tutorial 5</p>
+                        </a>
+
+                    </span>
+                </li>
+            </ul>
+
+
+
+        </main>
+        <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
