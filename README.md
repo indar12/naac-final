@@ -1,2 +1,1 @@
-# suma
-naac
+NAAC Audit submit for KEC
